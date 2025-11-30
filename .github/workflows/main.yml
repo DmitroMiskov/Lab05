@@ -38,3 +38,5 @@ jobs:
         token: ${{ secrets.REPO_B_TOKEN }}
         repository: Lab05_2/UiTest
         event-type: run-ui-tests
+        client-payload: '{"source":"Lab05","commit":"${{ github.sha }}","branch":"${{ github.ref_name }}"}'
+
