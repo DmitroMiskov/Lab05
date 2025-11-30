@@ -19,4 +19,9 @@ namespace CiCdDemo.Tests
             Assert.Equal(1, calc.Subtract(3, 2));
         }
     }
+
+    public static class Program
+    {
+        public static void Main() { }
+    }
 }
