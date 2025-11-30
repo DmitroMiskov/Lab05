@@ -1,0 +1,4 @@
+E:\Тестування\Lab05\CiCdDemo\obj\Debug\net9.0\CiCdDemo.GeneratedMSBuildEditorConfig.editorconfig
+E:\Тестування\Lab05\CiCdDemo\obj\Debug\net9.0\CiCdDemo.AssemblyInfoInputs.cache
+E:\Тестування\Lab05\CiCdDemo\obj\Debug\net9.0\CiCdDemo.AssemblyInfo.cs
+E:\Тестування\Lab05\CiCdDemo\obj\Debug\net9.0\CiCdDemo.csproj.CoreCompileInputs.cache
