@@ -9,7 +9,7 @@ namespace CiCdDemo.Tests
         public void Add_ReturnsCorrectResult()
         {
             var calc = new Calculator();
-            Assert.Equal(6, calc.Add(2, 3));
+            Assert.Equal(5, calc.Add(2, 3));
         }
 
         [Fact]
