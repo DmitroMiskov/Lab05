@@ -27,7 +27,7 @@ jobs:
 
 
     - name: Run tests
-      run: dotnet test CiCdDemo.Tests/CiCdDemo.Tests.csproj
+      run: dotnet test CiCdDemo/CiCdDemo.sln
 
     - name: Run code analysis (lint)
       run: dotnet format --verify-no-changes
