@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,14 +20,13 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore ./CiCdDemo/CiCdDemo.csproj
+      run: dotnet restore CiCdDemo/CiCdDemo.sln
 
-    - name: Build project
-      run: dotnet build --no-restore ./CiCdDemo/CiCdDemo.csproj
+    - name: Build solution
+      run: dotnet build CiCdDemo/CiCdDemo.sln --no-restore
 
-
-    - name: Run tests
-      run: dotnet test CiCdDemo/CiCdDemo.sln
+    - name: Run unit tests
+      run: dotnet test CiCdDemo/CiCdDemo.sln --no-build --verbosity normal
 
     - name: Run code analysis (lint)
-      run: dotnet format --verify-no-changes
+      run: dotnet format CiCdDemo/CiCdDemo.sln --verify-no-changes
