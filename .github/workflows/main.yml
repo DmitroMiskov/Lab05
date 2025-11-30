@@ -36,5 +36,5 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_B_TOKEN }}
-        repository: your-username/UiTest
+        repository: Lab05_2/UiTest
         event-type: run-ui-tests
