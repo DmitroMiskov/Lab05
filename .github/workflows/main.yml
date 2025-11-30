@@ -26,8 +26,8 @@ jobs:
       run: dotnet build --no-restore ./CiCdDemo/CiCdDemo.csproj
 
 
-    - name: Run unit tests
-      run: dotnet test ./CiCdDemo.Tests/CiCdDemo.Tests.csproj
+    - name: Run tests
+      run: dotnet test Lab05/CiCdDemo.Tests/CiCdDemo.Tests.csproj
 
     - name: Run code analysis (lint)
       run: dotnet format --verify-no-changes
