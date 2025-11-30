@@ -30,3 +30,11 @@ jobs:
 
     - name: Run code analysis (lint)
       run: dotnet format CiCdDemo/CiCdDemo.sln --verify-no-changes
+
+    - name: Trigger Selenium UI tests
+      if: success()
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.REPO_B_TOKEN }}
+        repository: your-username/UiTest
+        event-type: run-ui-tests
